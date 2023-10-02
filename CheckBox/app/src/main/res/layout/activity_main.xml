@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza"
+        android:id="@+id/pizzaCheckBox"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="100dp"
+        android:checked="false"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burger"
+        android:id="@+id/burgerCheckBox"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignLeft="@+id/pizzaCheckBox"
+        android:layout_below="@+id/pizzaCheckBox"
+        android:layout_marginTop="50dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dosa"
+        android:id="@+id/dosaCheckBox"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_alignLeft="@+id/burgerCheckBox"
+        android:layout_below="@+id/burgerCheckBox"
+        android:layout_marginTop="50dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:id="@+id/showButton"
+        android:layout_alignLeft="@+id/dosaCheckBox"
+        android:layout_below="@+id/dosaCheckBox"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showTextView"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_alignLeft="@+id/showButton"
+        android:layout_below="@+id/showButton"
+        android:layout_marginTop="60dp" />
+
+</RelativeLayout>

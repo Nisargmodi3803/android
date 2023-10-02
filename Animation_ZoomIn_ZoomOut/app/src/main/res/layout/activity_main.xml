@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:id="@+id/imgView"
+        app:srcCompat="@drawable/viper"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zoom in"
+        android:id="@+id/zoomInBtn"
+        android:layout_below="@+id/imgView"
+        android:layout_alignStart="@+id/imgView"
+        android:layout_marginTop="50dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zoom out"
+        android:id="@+id/zoomOutBtn"
+        android:layout_below="@+id/zoomInBtn"
+        android:layout_alignStart="@+id/imgView"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
